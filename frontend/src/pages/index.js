@@ -85,16 +85,24 @@ export default function Home() {
     }
 
     try {
+      // Crear el cantante
       await createSinger(formData);
-      await fetchSingers();
+
+      // Limpiar los campos de entrada después de crear el cantante
       setFormData({
         name: "",
         lastName: "",
         age: "",
         musicalGenre: "",
-      }); // Limpiar los campos de entrada
+      });
+
+      // Actualizar la lista de cantantes
+      await fetchSingers();
+
+      // Mostrar mensaje de éxito
       Swal.fire("¡Éxito!", "Cantante creado exitosamente", "success");
     } catch (error) {
+      // Mostrar mensaje de error si falla la creación del cantante
       Swal.fire("¡Error!", "No se pudo crear el cantante", "error");
     }
   };
