@@ -40,7 +40,7 @@ Antes de continuar con los pasos de instalación espera a que Node.js y git sean
 
         cd backend
 
-    2.2. **Instala las dependencias del servidor Express:**
+    2.2. **Instala las dependencias del servidor NestJS:**
 
         Ejecuta el siguiente comando para instalar las dependencias del servidor Nest:
 
