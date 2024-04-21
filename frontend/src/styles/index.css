@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para los botones */
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #F6B100;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FECB48;
+}
+
+/* Estilos para el formulario */
+input {
+  padding: 12px 16px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para mensajes de SweetAlert */
+.swal2-popup {
+  font-size: 1.2rem;
+}
+
+/* Media queries para hacer la tabla responsive */
+@media only screen and (max-width: 600px) {
+  th, td {
+    padding: 8px;
+  }
+}
+
+/*Estilos para search*/
+
+.details-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.details-container h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.details-container p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.details-container p span {
+  font-weight: bold;
+  color: #333333;
+}
+
+
+/*Layout*/
+
+.container-main-layout {
+  background-color: #012439;
+  position: relative;
+  /* Para posicionar las estrellas dentro del contenedor */
+}
+
+.stars {
+  position: absolute;
+  /* Posicionamiento absoluto para las estrellas */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.stars::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  background-color: #fff;
+  box-shadow: 200px 200px #fff, 400px 400px #fff, 600px 600px #fff, 800px 800px #fff;
+  /* Añadir más sombras para más estrellas */
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Centra verticalmente */
+  align-items: flex-start;
+  /* Alinea los elementos a la izquierda */
+  height: 100%;
+  /* Opcional: para que ocupe toda la altura del contenedor padre */
+}
+
+.principal-text {
+  text-transform: uppercase;
+  color: white;
+  margin-left: 50px;
+  width: 961px;
+  height: 252px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+  font-size: 55px;
+}
+
+.second-text {
+  color: white;
+  margin-left: 50px;
+  margin-top: 12px;
+  width: 582px;
+  height: 60px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.button-container {
+  margin-left: 48px;
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.button-see {
+  text-transform: uppercase;
+  width: 216px;
+  height: 66px;
+  border-radius: 15px;
+  font-weight: 600;
+  background: linear-gradient(#FECB48, #F6B100);
+}
+
+
+.rounded-text {
+  position: relative;
+  color: #fff;
+}
+
+.rounded-text::before {
+  content: ''; /* Insertar un contenido vacío */
+  position: absolute;
+  top: 50%;
+  left: -15px; /* Ajusta el desplazamiento lateral según sea necesario */
+  width: 140px; /* Ancho del borde girado */
+  height: 50px; /* Grosor del borde girado */
+  border: 2px solid #FDC965; /* Definir el borde con un color */
+  border-radius: 70px / 25px; /* Hacer que el borde sea redondeado (horizontalmente más alargado que verticalmente) */
+  transform: translateY(-50%) rotate(-9.75deg); /* Rotación y ajuste vertical */
+}
+
+
+
