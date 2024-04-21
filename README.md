@@ -50,9 +50,9 @@ Antes de continuar con los pasos de instalación espera a que Node.js y git sean
 
         Ejecuta el siguiente comando para iniciar el servidor Express:
 
-        node index.js
+        npm start
 
-        El servidor Express se ejecutará en http://localhost:3200.
+        El servidor Nest se ejecutará en http://localhost:3200.
 
 3.  **Accede al front del proyecto:**
 
